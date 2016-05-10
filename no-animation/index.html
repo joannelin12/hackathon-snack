@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snack Surprise!</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+	<div id="container">
+		<h2>Random Snack Finder</h2>
+
+
+			<div id="snackContainer">
+	
+			</div>
+			
+			<div id="buttonContainer" action='#'>
+				<form name="snackForm">
+					<input id="surpriseButton" type="button" onclick="snackFilter(this.form);" value="surprise me" />
+					<div id="tasteOptions">
+					<div class="holder"><label><input class="taste" type="radio" name="taste" value="sweet" id="sweet"/><span></span><p class="tastetext">sweet</p></label></div>
+					<div class="holder"><label><input class="taste" type="radio" name="taste" value="salty" id="salty"/><span></span><p class="tastetext">salty</p></label></div>
+					<div class="holder"><label><input class="taste" type="radio" name="taste" value="spicy" id="spicy"/><span></span><p class="tastetext">spicy</p></label></div>
+					</div>
+					<div id="textureOptions">
+					<div class="holder"><label><input class="texture" type="radio" name="texture" value="crunchy" id="crunchy"/><span></span><p class="tastetext">crunchy</p></label></div>
+					<div class="holder"><label><input class="texture" type="radio" name="texture" value="soft" id="soft"/><span></span><p class="tastetext">soft</p></label></div>
+					</div>
+					<div class="extrabuttons">
+					<input class="againButton" id="againButton" type="button" onclick="againForm(this.form);" value="another!" />
+					<input class="resetButton" id="resetButton" type="button" onclick="resetForm(this.form);" value="reset" />
+					<input class="cartButton" id="cartButton" type="button" onclick="resetForm(this.form);" value="add to cart" />
+					</div>
+				</form>
+		</div>
+
+
+	</div>
+			<script src="snackdatabase.js" type="text/javascript"></script>
+			<script src="snackform.js" type="text/javascript"></script>
+
+		
+</body>
+</html>
