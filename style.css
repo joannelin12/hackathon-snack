@@ -1,0 +1,297 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+form {
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+#container{
+	margin:20px auto;
+	padding: 20px;
+
+}
+#container h2{
+	font-family: Raleway;
+	font-size: 36px;
+	font-weight: 300;
+	text-align:center;
+	color:#000;
+		-webkit-animation: appear .8s ease-in;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#snackContainer{
+	display:none;
+	font-size: 20px;
+	background: #fff;
+	padding:6px 10px;
+	margin:0 auto;
+	text-align: center;
+  	height:250px;
+  	width:300px;
+}
+
+.crop {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+     border: 3px solid #000;
+  	 border-radius: 200px;
+  	 margin: 0 auto;
+}
+
+#snackContainer img{
+	height:200px;
+}
+
+#questionMark{
+	font-size: 90px;
+	font-weight:700;
+}
+
+#buttonContainer{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#tasteOptions {
+	width:420px;
+	display:none;
+	margin:0 auto;
+	padding:20px 0px;
+	margin-top: 80px;
+	text-align: left;
+}
+
+
+input[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  padding: 0px; 
+  position: absolute; 
+  width: 1px;
+}
+
+/* One radio button per line */
+label {
+  display: block;
+  cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+	  transition: 0.5s ease all;
+}
+
+input[type="radio"] + span {
+  display: block;
+
+}
+
+.tastetext {
+	position: relative;
+	top:-82px;
+}
+
+.holder{
+	height:150px;
+	width: 140px;
+	float:left;
+	text-align: center;
+}
+
+.holder:hover label{
+	color: #F35B0A;
+	  transition: 0.5s ease all;
+}
+
+#radioContainer{
+	width:400px;
+	margin:0 auto;
+}
+
+/* the basic, unchecked style */
+input[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 0.125em solid #fff;
+  box-shadow: 0 0 0 3px #000;
+  transition: 0.5s ease all;
+  margin:0 auto;
+}
+
+input[type="radio"]:hover + span:before {
+  box-shadow: 0 0 0 5px #F35B0A;
+  transition: 0.5s ease all;
+  background-color: #000
+  margin:0 auto;
+}
+
+input[type="radio"]:hover + label {
+	color:#F35B0A;
+}
+
+
+
+#textureOptions {
+	width:295px;
+	display:none;
+	padding:20px 0px;
+	 margin:0 auto;
+	margin-top: 80px;
+	text-align: left;
+
+
+}
+.extrabuttons{
+	width:420px;
+	margin: 0 auto;
+	margin-top: 20px !important;
+}
+
+#againButton{
+	float:left;
+	display:none;
+	width:120px;
+	height:120px;
+	border-radius: 100px;
+	border:3px solid #000;
+	color:#000;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	background-color: #fff;
+	margin:0 auto;
+	margin-right: 30px !important;
+
+}
+
+#resetButton{
+	float:left;
+	display:none;
+	width:120px;
+	height:120px;
+	border-radius: 100px;
+	border:3px solid #000;
+	color:#000;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	background-color: #fff;
+	margin:0 auto;
+	margin-right: 30px !important;
+
+}
+
+#cartButton{
+	float:left;
+	display:none;
+	width:120px;
+	height:120px;
+	border-radius: 100px;
+	border:3px solid #000;
+	color:#000;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	background-color: #fff;
+	margin:0 auto;
+
+}
+
+
+
+
+
+#surpriseButton{
+	width:200px;
+	height:200px;
+	border-radius: 100px;
+	border:3px solid #000;
+	color:#000;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: bold;
+	margin:0 auto;
+	margin-top: 60px;
+	text-decoration: none;
+	text-align: center;
+	background-color: #fff;
+	transition: 0.5s ease all;
+
+}
+
+
+
+#surpriseButton:hover{
+	cursor:pointer;
+	transition: 0.5s ease all;
+	border: 3px solid #F35B0A;
+	color:#F35B0A;
+    -webkit-animation: bounceOut 2s infinite;
+}
+
+@-webkit-keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 0px #F35B0A;
+    opacity: 1;
+  
+  }
+   50% {
+    box-shadow: 0 0 0 10px #F35B0A;
+    opacity: 1;
+
+  }
+  100% {
+    box-shadow: 0 0 0 0px #F35B0A;
+    opacity: 1;
+
+  }
+}
+
+#againButton:hover, #resetButton:hover, #cartButton:hover{
+	cursor:pointer;
+	transition: 0.5s ease all;
+	border: 3px solid #F35B0A;
+	color:#F35B0A;
+    -webkit-animation: bounceOut1 2s infinite;
+}
+
+@-webkit-keyframes bounceOut1 {
+  0% {
+    box-shadow: 0 0 0 0px #F35B0A;
+    opacity: 1;
+  
+  }
+   50% {
+    box-shadow: 0 0 0 3px #F35B0A;
+    opacity: 1;
+
+  }
+  100% {
+    box-shadow: 0 0 0 0px #F35B0A;
+    opacity: 1;
+
+  }
+}
+
+
